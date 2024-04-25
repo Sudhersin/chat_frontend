@@ -5,7 +5,7 @@ const AuthPage =(props) => {
         e.preventDefault();
         const {value}=e.target[0];
         axios.post(
-            'http://localhost:3001/authenticate',
+            'https://chat-backend-bice.vercel.app/authenticate',
             {username:value},
            { headers: {
                 'Access-Control-Allow-Origin': '*',
